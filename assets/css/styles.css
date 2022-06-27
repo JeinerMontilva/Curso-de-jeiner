@@ -187,7 +187,7 @@ main {
 }
 
 .contenedor__info--texto-servicios {
-    color: #000;
+    color: #00f;
     font-size: 28px;
 }
 
@@ -248,7 +248,7 @@ main {
     background: #efefef;
     border-radius: 60px;
     border: #000 solid 2px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .consulta__titulo {
     font-size: 50px;
