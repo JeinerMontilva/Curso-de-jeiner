@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./../../imagenes/josh-gordon-fzHmP6z8OQ4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 67%;
+    position: relative;
+    left: 650px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+    position: relative;
+    right: 270px;
+    padding: 0px 21px;
+}
+
+.li-ayuda {
+    position: relative;
+    left: 100px;
+}
+
+.contactos {
+    color: #001AFF;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 20px;
+}
+
+.contenedor__info--contactos {
+    width: 500px;
+    height: 400px;
+    border: #000 solid 2px;
+    background: #ddd;
+    border-radius: 70px;
+}
+
+.contenedor__titulo {
+    width: 380px;
+    height: 82px;
+}
+
+.contenedor__titulo--texto {
+    font-size: 70px;
+    color: #001AFF;
+}
+
+.contenedor__contactos {
+    width: 450px;
+    height: 230px;
+}
+
+.contenedor__contactos--texto {
+    color: #000;
+    font-size: 45px;
+}
+
+.contenedor__consulta {
+    width: 675px;
+    height: 551px;
+    background: #efefef;
+    border-radius: 60px;
+    border: #000 solid 2px;
+}
+
+
+.consulta__titulo {
+    font-size: 50px;
+    color: #0500FF;
+}
+
+.consulta__input {
+    width: 640px;
+    height: 55px;
+    padding: 20px;
+    margin: 20px 15px;
+    border-radius: 5px;
+    border: #000 solid 1px; 
+    font-size: 20px;
+    color: #000;
+}
+
+.consulta__enviar {
+    width: 80px;
+    height: 30px;
+    margin: 1px 15px;
+    font-size: 20px;
+}
+
+.consulta__restablecer {
+    width: 125px;
+    height: 30px;
+    font-size: 20px;
+}
+
+footer {
+    position: relative;
+    width: 1920px;
+    height: 140px;
+    left: 0px;
+    top: 735px;
+    background: #BDFF00;
+}
+
+.imagen__facebook {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 25px;
+    top: 25px;
+    border: 1px solid #000;
+    border-radius: 53px;
+}
+
+.imagen__twitter {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 160px;
+    top: 25px;
+    border: #000 solid 1px;
+    border-radius: 53px;
+}
+
+.imagen__youtube {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 295px;
+    top: 25px;
+    border: #000 solid 1px;
+    border-radius: 53px;
+}
+
+.footer__contenedor--texto {
+    position: absolute;
+    width: 732px;
+    height: 111px;
+    left: 1150px;
+    top: 17px;
+}
+
+.footer--texto {
+    font-size: 45px;    
+}
