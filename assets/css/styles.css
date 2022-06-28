@@ -269,14 +269,14 @@ main {
 
 .consulta__enviar {
     width: 80px;
-    height: 30px;
+    height: 40px;
     margin: 1px 15px;
     font-size: 20px;
 }
 
 .consulta__restablecer {
     width: 125px;
-    height: 30px;
+    height: 40px;
     font-size: 20px;
 }
 /*estilos de la pagina ayuda*/
@@ -368,23 +368,25 @@ footer {
     body {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 82px 80% 138px;
+        grid-template-rows: 82px 80% auto;
     }
+    /*Barra de navegacion responsive*/
     #navbarNav {
         margin-top: 34px;
         margin-left: 0px;
         transition: all .4s;
     }
-    .contenedor__informacion {
+    /*estilos del index responsive*/
+    .contenedor__informacion--index {
         width: 80%;
-        height: 450px;
+        height: 458px;
         margin: 70px 50px;
     }
-    .titulo__contenedor {
+    .titulo__contenedor--index {
         width: 300px;
         height: 110px;
     }
-    .titulo__contenedor--texto {
+    .titulo__contenedor--texto-index {
         font-size: 27px;
     }
     .contenedor__buttons {
@@ -405,6 +407,141 @@ footer {
         height: 95px;
         margin-left: 50px;
     }
+    /*Estilos de la pagina "nosotros" responsive*/
+    .contenedor__informacion--nosotros {
+        width: 80%;
+        height: 578px;
+        margin: 10px 50px; 
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 60% auto;
+    }
+    .titulo__contenedor--nosotros {
+        width: 80%;
+        height: 50px;
+        order: 1;
+        margin: 0px 20px;
+    }
+    .titulo__contenedor--texto-nosotros {
+        font-size: 35px;
+    }
+    .contenedor__info--nosotros {
+        order: 2;
+        width: 100%;
+        height: 295px;
+        margin: 5px;
+    }
+    .contenedor__info--texto-nosotros {
+        font-size: 20px;
+    }
+    .imagen__nosotros {
+        order: 3;
+        height: 180px;
+        width: 180px;
+        margin: 5px 85px;
+    }
+    /*estilos de la pagina "servicios" responsive*/
+    .contenedor__informacion--servicios {
+        width: 80%;
+        height: 578px;
+        margin: 10px 50px; 
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 60% auto;
+    }
+    .titulo__contenedor--servicios {
+        width: 80%;
+        height: 50px;
+        order: 1;
+        margin: 0px 20px;
+    }
+    .titulo__contenedor--texto-servicios {
+        font-size: 34px;
+    }
+    .contenedor__info--servicios {
+        order: 2;
+        width: 100%;
+        height: 295px;
+        margin: 5px;
+    }
+    .contenedor__info--texto-servicios {
+        font-size: 20px;
+    }
+    .imagen__servicios {
+        order: 3;
+        height: 180px;
+        width: 180px;
+        margin: 5px 85px;
+    }
+    /*estilos para la pagina de "contactos" responsive*/
+    .body__contactos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 82.9% 140px;
+    }
+    .contenedor__informacion--contactos {
+        width: 90%;
+        height: 92%;
+        margin: 25px 22px;
+    }
+    .contenedor__info--contactos {
+        display: none;
+    }
+    .contenedor__consulta {
+        width: 90%;
+        height: 480px;
+        margin-left: 1px;
+        margin-top: 60px;
+    }
+    .consulta__input {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .consulta__enviar {
+        height: 30px;
+        width: 50px;
+        font-size: 15px;
+        margin-left: 40px;
+    }
+    .consulta__restablecer {
+        font-size: 15px;
+        width: 82px;
+        height: 30px;
+    }
+    /*estilos para la pagina de "ayuda" responsive*/
+    .contenedor__informacion--ayuda {
+        width: 80%;
+        height: 578px;
+        margin: 10px 50px; 
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 60% auto;
+    }
+    .contenedor__titulo--ayuda {
+        width: 80%;
+        height: 50px;
+        order: 1;
+        margin-top: 15px;
+    }
+    .contenedor__titulo--texto-ayuda {
+        font-size: 30px;
+    }
+    .contenedor__info--ayuda {
+        order: 2;
+        width: 100%;
+        height: 295px;
+        margin: 5px;
+    }
+    .contenedor__info--texto-ayuda {
+        font-size: 20px;
+    }
+    .imagen__ayuda {
+        order: 3;
+        height: 180px;
+        width: 180px;
+        margin: 5px 85px;
+    }
+    /*Footer responsive*/
     footer {
         height: 130px;
         border-radius: 32px 32px 0px 0px;
@@ -433,7 +570,7 @@ footer {
         margin-top: 10px;
     }
     .footer--texto {
-        font-size: 25px;
+        font-size: 24px;
     }
 }
 
