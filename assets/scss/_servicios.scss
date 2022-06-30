@@ -1,0 +1,36 @@
+.contenedor__informacion--servicios {
+    width: 70%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+    margin: 50px 390px;
+    .titulo__contenedor--servicios {
+        text-align: center;
+        width: 596px;
+        height: 92px;
+        padding: 10px;
+        margin-left: -40px;
+        margin-top: 15px;
+        .titulo__contenedor--texto-servicios {
+            color: #f00;
+            font-size: 68px;
+        }
+    }
+    .contenedor__info--servicios {
+        width: 661px;
+        height: 321px;
+        margin-left: 500px;
+        .contenedor__info--texto-servicios {
+            color: #00f;
+            font-size: 28px;
+        }
+    }
+    .imagen__servicios {
+        width: 300px;
+        height: 300px;
+        border-radius: 260px;
+        margin-top: 175px;
+        margin-left: 80px;
+    }
+}

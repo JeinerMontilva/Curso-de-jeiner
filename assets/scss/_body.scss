@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 86.3% 140px;
+    grid-template-areas: " nav   "
+                         " main  "
+                         " footer";
+    background-image: url(../../imagenes/xan-griffin-eA2t5EvcxU4-unsplash.jpg);
+    background-size: 2000px 1200px;
+    background-position: -80px -120px;
+    background-repeat: no-repeat;
+}
