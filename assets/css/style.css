@@ -1,3 +1,12 @@
+.extend, .contenedor__informacion--index .contenedor__buttons .registrarse__contenedor .registrarse__contenedor--texto, .contenedor__informacion--index .contenedor__buttons .iniciar-sesion__contenedor .iniciar-sesion__contenedor--texto {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -40,8 +49,10 @@ main {
   width: 56%;
   height: 500px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
   margin: 50px 390px;
 }
 .contenedor__informacion--index .titulo__contenedor--index {
@@ -56,9 +67,11 @@ main {
 }
 .contenedor__informacion--index .contenedor__buttons {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
   width: 98%;
   height: 99px;
-  flex-direction: row;
   justify-content: space-evenly;
   margin-top: 200px;
 }
@@ -69,13 +82,6 @@ main {
   border-radius: 40px;
   text-align: center;
   padding: 30px;
-}
-.contenedor__informacion--index .contenedor__buttons .iniciar-sesion__contenedor .iniciar-sesion__contenedor--texto {
-  font-size: 28px;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: none;
-  color: #fff;
 }
 .contenedor__informacion--index .contenedor__buttons .iniciar-sesion__contenedor:hover {
   transform: scale(1.1);
@@ -90,20 +96,11 @@ main {
   text-align: center;
   padding: 29px;
 }
-.contenedor__informacion--index .contenedor__buttons .registrarse__contenedor .registrarse__contenedor--texto {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: none;
-  color: #fff;
-}
 .contenedor__informacion--index .contenedor__buttons .registrarse__contenedor:hover {
   transform: scale(1.1);
   text-decoration: underline;
   transition: all 0.2s;
 }
-
 /*estilos de la pagina "nosotros"*/
 .contenedor__informacion--nosotros {
   width: 70%;
@@ -185,6 +182,8 @@ main {
   height: 600px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
   justify-content: space-around;
   margin-left: 250px;
 }
@@ -268,7 +267,7 @@ main {
 }
 .contenedor__informacion--ayuda .contenedor__titulo--ayuda .contenedor__titulo--texto-ayuda {
   color: #007D23;
-  font-size: 48px;
+  font-size: 45px;
 }
 .contenedor__informacion--ayuda .contenedor__info--ayuda {
   width: 661px;
@@ -277,6 +276,7 @@ main {
 }
 .contenedor__informacion--ayuda .contenedor__info--ayuda .contenedor__info--texto-ayuda {
   font-size: 30px;
+  color: #11bb00;
 }
 .contenedor__informacion--ayuda .imagen__ayuda {
   width: 300px;
@@ -291,11 +291,12 @@ footer {
   grid-area: footer;
   width: 100%;
   height: 160px;
-  background: #BDFF00;
+  background-color: #BDFF00;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
 }
 footer .contenedor__imagenes--footer {
   display: flex;
@@ -359,6 +360,8 @@ footer .footer__contenedor--texto .footer--texto {
   .contenedor__informacion--index .contenedor__buttons {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
   }
   .contenedor__informacion--index .contenedor__buttons .iniciar-sesion__contenedor {
     width: 280px;
@@ -495,7 +498,7 @@ footer .footer__contenedor--texto .footer--texto {
     margin-top: 15px;
   }
   .contenedor__informacion--ayuda .contenedor__titulo--ayuda .contenedor__titulo--texto-ayuda {
-    font-size: 30px;
+    font-size: 28px;
   }
   .contenedor__informacion--ayuda .contenedor__info--ayuda {
     order: 2;
@@ -521,7 +524,6 @@ footer .footer__contenedor--texto .footer--texto {
   footer .contenedor__imagenes--footer {
     width: 45%;
     margin-left: 5px;
-    display: flex;
     justify-content: space-around;
   }
   footer .contenedor__imagenes--footer .imagen__facebook {

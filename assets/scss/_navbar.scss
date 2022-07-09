@@ -1,13 +1,13 @@
 #navbarNav {
     margin-left: 800px;
-    background-color: #fff;
+    background-color: map-get($colores, navbarFondo );
     li {
         margin: 0px 30px;
         font-size: 30px;
-    }
-    li:hover {
-        transition: all .1s;
-        transform: scale(1.2);
-        text-decoration: underline;
+        &:hover { 
+            transition: all .1s;
+            transform: scale(1.2);
+            text-decoration: underline;
+        }
     }
 }

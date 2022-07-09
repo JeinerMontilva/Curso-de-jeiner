@@ -1,9 +1,8 @@
 .contenedor__informacion--contactos {
     width: 80%;
     height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include propiedadesFlex (flex,row,nowrap,start);
+    justify-content: map-get($justify , around);
     margin-left: 250px;
     .contenedor__info--contactos {
         width: 500px;

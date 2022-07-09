@@ -1,9 +1,8 @@
 .contenedor__informacion--index {
     width: 56%;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include propiedadesFlex (flex,row,wrap,start);
+    justify-content: map-get($justify , center );
     margin: 50px 390px;
     .titulo__contenedor--index {
         text-align: center;
@@ -16,11 +15,10 @@
         }
     }
     .contenedor__buttons {
-        display: flex;
+        @include propiedadesFlex (flex,row,nowrap,start);
         width: 98%;
         height: 99px;
-        flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: map-get($justify , evenly );
         margin-top: 200px;
         .iniciar-sesion__contenedor {
             width: 332px;
@@ -29,18 +27,14 @@
             border-radius: 40px;
             text-align: center;
             padding: 30px;
-            .iniciar-sesion__contenedor--texto {
-                font-size: 28px;
-                font-weight: bold;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-decoration: none;
-                color: #fff;
+            &:hover {
+                transform: scale(1.1);
+                text-decoration: underline;
+                transition: all .2s;
             }
-        }
-        .iniciar-sesion__contenedor:hover {
-            transform: scale(1.1);
-            text-decoration: underline;
-            transition: all .2s;
+            .iniciar-sesion__contenedor--texto {
+                @extend .extend
+            }
         }
         .registrarse__contenedor {
             width: 332px;
@@ -49,19 +43,14 @@
             border-radius: 40px;
             text-align: center;
             padding: 29px;
-            .registrarse__contenedor--texto {
-                text-transform: uppercase;
-                font-size: 28px;
-                font-weight: bold;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-decoration: none;
-                color: #fff;
+            &:hover {
+                transform: scale(1.1);
+                text-decoration: underline;
+                transition: all .2s;
             }
-        }
-        .registrarse__contenedor:hover {
-            transform: scale(1.1);
-            text-decoration: underline;
-            transition: all .2s;
+            .registrarse__contenedor--texto {
+                @extend .extend
+            }
         }
     }
 }

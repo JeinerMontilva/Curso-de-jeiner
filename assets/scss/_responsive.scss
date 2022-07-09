@@ -23,8 +23,7 @@
             }
         }
         .contenedor__buttons {
-            display: flex;
-            flex-direction: column;
+            @include propiedadesFlex (flex,column,nowrap,start);
             .iniciar-sesion__contenedor {
                 width: 280px;
                 height: 95px;
@@ -158,7 +157,7 @@
             order: 1;
             margin-top: 15px;
             .contenedor__titulo--texto-ayuda {
-                font-size: 30px;
+                font-size: 28px;
             }
         }
         .contenedor__info--ayuda {
@@ -184,8 +183,7 @@
         .contenedor__imagenes--footer {
             width: 45%;
             margin-left: 5px;
-            display: flex;
-            justify-content: space-around;
+            justify-content: map-get($justify , around );
             .imagen__facebook {
                 width: 60px;
                 height: 60px;
